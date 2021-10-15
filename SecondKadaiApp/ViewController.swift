@@ -13,6 +13,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        
+        resultViewController.name = ""
+    }
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        
+    }
 
 
 }
